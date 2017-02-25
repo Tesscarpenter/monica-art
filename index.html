@@ -1,0 +1,59 @@
+---
+layout: default
+banner_path: images/banner-image.jpg
+home-gallery:
+- src: images/digitalart/bun.jpg
+  title: Bun
+  description: details
+- src: images/digitalart/aqualumina_1200.jpg
+  title: Aqualumina
+  description: details
+- src: images/digitalart/book_1800.jpg
+  title: Book
+  description: details
+- src: images/digitalart/amy_matt.jpg
+  title: Amy and Matt
+  description: details
+- src: images/digitalart/white_queen_full.jpg
+  title: White
+  description: details
+- src: images/digitalart/hair_over_shoulder_2048.jpg
+  title: Hair Over Shoulder
+  description: details
+- src: images/digitalart/arcade_flat_sig.jpg
+  title: Arcade Flat
+  description: details
+- src: images/digitalart/blobbyhair.jpg
+  title: Blobby Hair
+  description: details
+- src: images/digitalart/jonghyunflowers_final.jpg
+  title: Jonghyun Flowers
+  description: details
+
+
+---
+
+
+<section class="text-section">
+  <div class="center">
+    <!-- blurb about monica -->
+    <h1>Monica Ip</h1>
+    <h2>Artist extraordinaire</h2>
+    <p class="blurb">Pretty rad at the doing of the things. Spicy jalapeno bacon ipsum dolor amet andouille sausage shoulder brisket porchetta. Strip steak beef ribs venison ham filet mignon. Salami chuck pork belly turkey alcatra. Pastrami filet mignon turducken beef pork loin pork belly cupim shankle ground round.<p>
+  </div>
+</section>
+
+
+<section class="grid"> <!-- images -->
+  <div class="home-gallery">
+    {% for pic in page.home-gallery %}
+      <a href="{{pic.src}}" data-lightbox="{{pic.title}}" data-title="{{pic.title}} - {{pic.description}}"><img src="{{pic.src}}">
+      <h4 class="underline center">{{pic.title}}</h4></a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="center text-section">
+  <!-- see more link -->
+  <a class="see-more" href="/gallery.html">See More</a>
+</section>

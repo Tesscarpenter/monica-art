@@ -1,0 +1,533 @@
+/*------Table of contents---
+1. Reset
+2. Universal Styles
+3. header
+4. blurb
+5. images on home page
+6. gridlex
+7. gallery page
+8. image mosaic
+9. about page
+10. contact page
+11. see more
+12. top
+11. footer
+12. footer nav class="footer-social" links
+
+-----*/
+
+
+/*-------------This is the reset----------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+img {
+  max-width: 100%
+}
+
+a {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-section {
+  border-bottom: 1px solid #cc1420;
+  border-top: 1px solid #cc1420;
+  margin: 0 5vw 30px 5vw;
+  padding: 65px 10%;
+  color: #3F3F3F;
+  width: 90vw;
+}
+
+.center {
+  text-align: center;
+}
+
+h5 {
+  font-family: 'Old Standard TT', serif;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+.middle-align {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.data-title {
+  font-family: 'Della Respira', serif;
+  font-size: 2rem;
+  color: #cc1420;
+  letter-spacing: 5px;
+}
+
+.lb-data .lb-caption {
+  display: block!important;
+  padding-left: 70px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  }
+
+
+/*--------header-------*/
+
+header nav a {
+  display: inline-block;
+  padding: 40px 120px;
+  margin: 0px 8px;
+  min-width: 180px;
+  color: #cc1429;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 2rem;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  background-color: rgba(63, 63, 63, 0.75);
+  color: white;
+}
+
+.home-page-menu-banner {
+  position: relative;
+}
+
+.home-page-menu-banner img {
+  display: block;
+}
+
+
+/*--------blurb------*/
+
+h1, h2, h3 {
+  font-family: 'Old Standard TT', serif;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 35px;
+}
+
+h4 {
+  font-family: 'Lato', sans;
+}
+
+p {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 2rem;
+}
+
+/*----------home page images--------*/
+
+.home-gallery {
+  max-width: 50%;
+  margin: auto;
+  /*display: inline-block;*/
+}
+
+.home-gallery img {
+}
+
+.home-gallery a{
+  display:block;
+  padding: 6%;
+  position: relative;
+}
+
+.underline {
+  text-decoration: underline;
+  font-size: 1.5rem;
+  color: #3F3F3F;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+
+/*-------gallery page------*/
+.gallery-image-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.gallery-image-link:hover {
+  background-color: #3f3f3f;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.grid div.gallery-image {
+  margin-bottom: 2%;
+  padding-bottom:37%;
+  background-size: cover;
+  background-position: center;
+  position:relative;
+}
+
+.gallery-image h4 {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  top: 30%;
+  margin: 30%;
+  outline-color: 2px solid #CC1420;
+}
+
+
+/*-----------gridlex-----------*/
+.col, [class*=col-] {
+  padding: 0px;
+}
+
+/*--------------image mosaic--------------*/
+.mosaic{
+  width: 1670px;
+  margin: auto;
+}
+
+.pic { width: 200px; margin: 5px 0px 5px 0px;}
+.pic--width2 { width: 410px; }
+
+/*-------------about page--------------*/
+.about{
+  margin:auto;
+}
+
+.about p {
+  font-size: 2rem;
+}
+
+.about h5 {
+  margin-bottom: 4%;
+}
+
+.float-left{
+  float: left;
+  padding: 2%;
+}
+
+.float-right {
+  float: right;
+  clear: both;
+  padding: 2%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+/*--------------contact page--------------*/
+/*contact form*/
+
+#form input, #form textarea, #submit {
+  display: block;
+  margin: 5% 5% 5% 5%;
+  width: 90%;
+  border: 1px solid #cc1420;
+}
+
+.contact-pic {
+  margin-bottom: 5%;
+}
+
+.contact p {
+}
+
+.padding-5 {
+  padding: 5vw;
+}
+
+/*----------see more---------*/
+.see-more {
+  letter-spacing: 15px;
+  font-size: 3rem;
+  padding: 5%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  word-spacing: 25px;
+}
+
+/*----------top----------*/
+.up-arrow {
+  letter-spacing: 15px;
+  font-size: 2rem;
+  padding: 5%;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  word-spacing: 25px;
+}
+
+/*---------footer------------*/
+.footer-feature {
+  width: 100%;
+}
+
+footer {
+  color: white;
+  background-color: #3F3F3F;
+  padding: 10vh 10vw;
+}
+
+footer h5 {
+  margin-bottom: 4.5rem;
+  border-bottom: 1px solid;
+  padding-bottom: 5.5px;
+  line-height: 1.2;
+}
+
+footer a {
+  padding: 10px;
+  font-size: 1.2rem;
+  letter-spacing: 5px;
+}
+
+.footer-email {
+  margin-bottom: 4.5rem;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: inherit;
+  text-decoration: none;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  line-height: 1.2;
+  letter-spacing: 10px;
+}
+
+.footer-social a {
+  font-family: 'Della Respira', serif;
+  line-height: 1.2;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 10px;
+  padding: 1.5em;
+  letter-spacing: 10px;
+  word-spacing: 30px;
+  display: inline-block;
+}
+
+.social-hover:hover {
+  border-bottom: 1px solid white;
+}
+
+/*dont touch anythinbelow here----------*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+#form {
+  position: relative;
+  width: 100%;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  background: transparent;
+  outline: none;
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  border: solid 1px #b3aca7;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+
+  outline:none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+@media screen and (max-width: 1680px) {
+    .mosaic {
+        width: 1460px;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .mosaic {
+        width: 1250px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .mosaic {
+        width: 1040px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .mosaic {
+        width: 830px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .mosaic {
+        width: 620px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+  #form input, #form textarea, #submit{
+    margin: 5% 6% 5% 6%;
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+    .mosaic {
+        width: 410px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mosaic {
+        width: 200px;
+    }
+}

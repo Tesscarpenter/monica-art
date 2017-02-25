@@ -1,0 +1,66 @@
+---
+layout: default
+banner_path: images/banners/costume.jpg
+class: costume
+costumes:
+- src: images/costumes/closeup.jpg
+  title: Close Up
+  description: details
+- src: images/costumes/deeplunge.jpg
+  title: Deep Lunge
+  description: details
+  class: pic--width2
+- src: images/costumes/kimono.jpg
+  title: Kimono
+  description: details
+  class: pic--width2
+- src: images/costumes/mononoke-hidir2.jpg
+  title: Mononoke Hidir 2
+  description: details
+  class: pic--width2
+- src: images/costumes/otherlunge.jpg
+  title: Other Lunge
+  description: details
+- src: images/costumes/pink.jpg
+  title: Pink
+  description: details
+- src: images/costumes/plant.jpg
+  title: Plant
+  description: details
+  class: pic--width2
+- src: images/costumes/tattoo.jpg
+  title: Tattoo
+  description: details
+  class: pic--width2
+- src: images/costumes/whip.jpg
+  title: Whip
+  description: details
+  class: pic--width2
+  
+---
+
+
+<section class="text-section">
+  <div class="center">
+    <h1>Costumes</h1>
+    <p class="blurb">Made by me, worn by me<p>
+  </div>
+</section>
+
+
+<section> <!-- images -->
+  <div class="center">
+   <div class="costumes mosaic">
+     {% for pic in page.costumes %}
+       <a class="pic {{pic.class}}" href="{{pic.src}}" data-lightbox="{{pic.title}}" data-title="{{pic.title}} -  {{pic.description}}"><img src="{{pic.src}}">
+       <h4 class="underline center"></h4></a>
+     {% endfor %}
+   </div>
+  </div>
+</section>
+
+<section class="center text-section">
+  <!-- up arrow link -->
+  <a class="up-arrow" href="#top">Top
+  </a>
+</section>

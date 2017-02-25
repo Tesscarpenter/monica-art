@@ -1,0 +1,117 @@
+---
+layout: default
+banner_path: images/banners/digital-art.jpg
+class: digital-art
+digital-art:
+- src: images/digitalart/amy_matt.jpg
+  title: Amy and Matt
+  description: details
+- src: images/digitalart/aqualumina_1200.jpg
+  title: Aqualumina
+  description: details
+- src: images/digitalart/arcade_flat_sig.jpg
+  title: Arcade
+  description: details
+- src: images/digitalart/asuka_large.jpg
+  title: Asuka
+  description: details
+- src: images/digitalart/blobbyhair.jpg
+  title: Blobby Hair
+  description: details
+- src: images/digitalart/book_1800.jpg
+  title: Book
+  description: details
+- src: images/digitalart/bun.jpg
+  title: Bun
+  description: details
+  class: pic--width2
+- src: images/digitalart/cat-sandwitch.jpg
+  title: Cat Sandwitch
+  description: details
+- src: images/digitalart/chef.jpg
+  title: Chef
+  description: details
+- src: images/digitalart/distaste_2048.jpg
+  title: Distaste
+  description: details
+- src: images/digitalart/ed-flat-large.jpg
+  title: Ed
+  description: details
+  class: pic--width2
+- src: images/digitalart/fate3-girl-large.jpg
+  title: Fate3 Girl
+  description: details
+- src: images/digitalart/makoharu-adventure-time-large.jpg
+  title: Makoharu Adventure Time
+  description: details
+  class: pic--width2
+- src: images/digitalart/hair_large.jpg
+  title: Hair
+  description: details
+- src: images/digitalart/hair_over_shoulder_2048.jpg
+  title: Hair Over Shoulder
+  description: details
+- src: images/digitalart/kisumi_2048.jpg
+  title: Kisumi
+  description: details
+- src: images/digitalart/naga_flat_1800.jpg
+  title: Naga
+  description: details
+- src: images/digitalart/rin-jacket.jpg
+  title: Rin Jacket
+  description: details
+- src: images/digitalart/shinee_tmwtd_orig_sig.jpg
+  title: Shinee
+  description: details
+- src: images/digitalart/suga_2048.jpg
+  title: Suga
+  description: details
+- src: images/digitalart/taemin_press_it_2048.jpg
+  title: Taemin Press It
+  description: details
+- src: images/digitalart/taeminscarf1200.jpg
+  title: Teamin Scarf
+  description: details
+- src: images/digitalart/tattoo_face_large.jpg
+  title: Tatto Face
+  description: details
+- src: images/digitalart/victuuri_final.jpg
+  title: Victuuri
+  description: details
+- src: images/digitalart/white_queen_full.jpg
+  title: White Queen
+  description: details
+---
+
+
+<section class="text-section">
+  <div class="center">
+    <h1>Digital Art</h1>
+    <p class="blurb">Art done on my tablet<p>
+  </div>
+</section>
+
+
+
+<section> <!-- images -->
+  <div class="center">
+   <div class="digital-art mosaic">
+     {% for pic in page.digital-art %}
+       <a class="pic {{pic.class}}" href="{{pic.src}}" data-lightbox="{{pic.title}}" data-title="{{pic.title}} - {{pic.description}}"><img src="{{pic.src}}">
+
+     {% endfor %}
+   </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="center text-section">
+  <!-- up arrow link -->
+  <a class="up-arrow" href="/digital-art.html">Top
+  </a>
+</section>

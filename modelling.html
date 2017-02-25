@@ -1,0 +1,53 @@
+---
+layout: default
+banner_path: images/banners/modelling.jpg
+class: modelling
+modelling:
+- src: images/modelling/closefence.jpg
+  title: Close Fence
+  description: details
+- src: images/modelling/cloud.jpg
+  title: Cloud
+  description: details
+- src: images/modelling/fence.jpg
+  title: Fence
+  description: details
+  class: pic--width2
+- src: images/modelling/overshouldersmile.jpg
+  title: Smile
+  description: details
+  class: pic--width2
+- src: images/modelling/road.jpg
+  title: Road
+  description: details
+- src: images/modelling/skirt_1828.jpg
+  title: Skirt
+  description: details
+  class: pic--width2
+
+---
+<section class="text-section">
+  <div class="center">
+    <h1>Modelling</h1>
+    <p class="blurb">lol im not a model, just helping out some photograper friends, make sure to check out their work!<p>
+  </div>
+</section>
+
+
+<section> <!-- images -->
+  <div class="center">
+   <div class="modelling mosaic">
+     {% for pic in page.modelling %}
+       <a class="pic {{pic.class}}" href="{{pic.src}}" data-lightbox="{{pic.title}}" data-title="{{pic.title}} -  {{pic.description}}"><img src="{{pic.src}}">
+       <h4 class="underline center"></h4></a>
+     {% endfor %}
+   </div>
+  </div>
+</section>
+
+
+<section class="center text-section">
+  <!-- up arrow link -->
+  <a class="up-arrow" href="#top">Top
+  </a>
+</section>

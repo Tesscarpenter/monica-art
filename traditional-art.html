@@ -1,0 +1,44 @@
+---
+layout: default
+banner_path: images/banners/traditional-art.jpg
+class: traditional-art
+traditional-art:
+- src: images/traditional-art/chara-sketches_orig.jpg
+  title: Chara
+  description: details
+- src: images/traditional-art/cloak_wind_sketch_1000.jpg
+  title: Cloak
+  description: details
+- src: images/traditional-art/haru-sketches_large.jpg
+  title: Haru
+  description: details
+- src: images/traditional-art/watercolour-face.jpg
+  title: Chara
+  description: details
+---
+
+
+<section class="text-section">
+  <div class="center">
+    <h1>Traditional Art</h1>
+    <p class="blurb">what even are pencils<p>
+  </div>
+</section>
+
+<section class="middle-align"> <!-- images -->
+  <div class="center">
+   <div class="traditional-art mosaic">
+     {% for pic in page.traditional-art %}
+       <a class="pic {{pic.class}}" href="{{pic.src}}" data-lightbox="{{pic.title}}" data-title="{{pic.title}} -  {{pic.description}}"><img src="{{pic.src}}">
+       <h4 class="underline center"></h4></a>
+     {% endfor %}
+   </div>
+  </div>
+</section>
+
+
+<section class="center text-section">
+  <!-- up arrow link -->
+  <a class="up-arrow" href="#top">Top
+  </a>
+</section>
